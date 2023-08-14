@@ -1,0 +1,645 @@
+{
+  "settings": [
+    {
+      "key": "version",
+      "value": "v3.16.3",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 1,
+      "flag": 2
+    },
+    {
+      "key": "site_title",
+      "value": "AList",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 1,
+      "flag": 0
+    },
+    {
+      "key": "announcement",
+      "value": "",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 1,
+      "flag": 0
+    },
+    {
+      "key": "pagination_type",
+      "value": "all",
+      "help": "",
+      "type": "select",
+      "options": "all,pagination,load_more,auto_load_more",
+      "group": 1,
+      "flag": 0
+    },
+    {
+      "key": "default_page_size",
+      "value": "30",
+      "help": "",
+      "type": "number",
+      "options": "",
+      "group": 1,
+      "flag": 0
+    },
+    {
+      "key": "allow_indexed",
+      "value": "false",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 1,
+      "flag": 0
+    },
+    {
+      "key": "allow_mounted",
+      "value": "true",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 1,
+      "flag": 0
+    },
+    {
+      "key": "logo",
+      "value": "https://cdn.jsdelivr.net/gh/alist-org/logo@main/logo.svg",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 2,
+      "flag": 0
+    },
+    {
+      "key": "favicon",
+      "value": "https://cdn.jsdelivr.net/gh/alist-org/logo@main/logo.svg",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 2,
+      "flag": 0
+    },
+    {
+      "key": "main_color",
+      "value": "#1890ff",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 2,
+      "flag": 0
+    },
+    {
+      "key": "home_icon",
+      "value": "🏠",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 2,
+      "flag": 0
+    },
+    {
+      "key": "home_container",
+      "value": "max_980px",
+      "help": "",
+      "type": "select",
+      "options": "max_980px,hope_container",
+      "group": 2,
+      "flag": 0
+    },
+    {
+      "key": "settings_layout",
+      "value": "list",
+      "help": "",
+      "type": "select",
+      "options": "list,responsive",
+      "group": 2,
+      "flag": 0
+    },
+    {
+      "key": "text_types",
+      "value": "txt,htm,html,xml,java,properties,sql,js,md,json,conf,ini,vue,php,py,bat,gitignore,yml,go,sh,c,cpp,h,hpp,tsx,vtt,srt,ass,rs,lrc",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 3,
+      "flag": 1
+    },
+    {
+      "key": "audio_types",
+      "value": "mp3,flac,ogg,m4a,wav,opus,wma",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 3,
+      "flag": 1
+    },
+    {
+      "key": "video_types",
+      "value": "mp4,mkv,avi,mov,rmvb,webm,flv",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 3,
+      "flag": 1
+    },
+    {
+      "key": "image_types",
+      "value": "jpg,tiff,jpeg,png,gif,bmp,svg,ico,swf,webp",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 3,
+      "flag": 1
+    },
+    {
+      "key": "proxy_types",
+      "value": "m3u8",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 3,
+      "flag": 1
+    },
+    {
+      "key": "proxy_ignore_headers",
+      "value": "authorization,referer",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 3,
+      "flag": 1
+    },
+    {
+      "key": "external_previews",
+      "value": "{}",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 3,
+      "flag": 0
+    },
+    {
+      "key": "iframe_previews",
+      "value": "{\n\t\"doc,docx,xls,xlsx,ppt,pptx\": {\n\t\t\"Microsoft\":\"https://view.officeapps.live.com/op/view.aspx?src=$e_url\",\n\t\t\"Google\":\"https://docs.google.com/gview?url=$e_url&embedded=true\"\n\t},\n\t\"pdf\": {\n\t\t\"PDF.js\":\"https://alist-org.github.io/pdf.js/web/viewer.html?file=$e_url\"\n\t},\n\t\"epub\": {\n\t\t\"EPUB.js\":\"https://alist-org.github.io/static/epub.js/viewer.html?url=$e_url\"\n\t}\n}",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 3,
+      "flag": 0
+    },
+    {
+      "key": "audio_cover",
+      "value": "https://jsd.nn.ci/gh/alist-org/logo@main/logo.svg",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 3,
+      "flag": 0
+    },
+    {
+      "key": "audio_autoplay",
+      "value": "false",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 3,
+      "flag": 0
+    },
+    {
+      "key": "video_autoplay",
+      "value": "false",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 3,
+      "flag": 0
+    },
+    {
+      "key": "hide_files",
+      "value": "",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 4,
+      "flag": 0
+    },
+    {
+      "key": "package_download",
+      "value": "true",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 4,
+      "flag": 0
+    },
+    {
+      "key": "customize_head",
+      "value": "<script src=\"https://polyfill.io/v3/polyfill.min.js?features=String.prototype.replaceAll\"></script>",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 4,
+      "flag": 1
+    },
+    {
+      "key": "customize_body",
+      "value": "<div class=\"copyright\" align=\"center\"><div class=\"about\"><p>\n<span class=\"name\">蜀ICP备</span><span class=\"link\"><a href=\"https://beian.miit.gov.cn/\" target=\"_blank\" rel=\"noopener nofollow noopener\">2022000131号</a></span><br class=\"pad\"><br class=\"pad\"></script>",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 4,
+      "flag": 1
+    },
+    {
+      "key": "link_expiration",
+      "value": "",
+      "help": "",
+      "type": "number",
+      "options": "",
+      "group": 4,
+      "flag": 1
+    },
+    {
+      "key": "sign_all",
+      "value": "false",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 4,
+      "flag": 1
+    },
+    {
+      "key": "privacy_regs",
+      "value": "(?:(?:\\d|[1-9]\\d|1\\d\\d|2[0-4]\\d|25[0-5])\\.){3}(?:\\d|[1-9]\\d|1\\d\\d|2[0-4]\\d|25[0-5])\n([[:xdigit:]]{1,4}(?::[[:xdigit:]]{1,4}){7}|::|:(?::[[:xdigit:]]{1,4}){1,6}|[[:xdigit:]]{1,4}:(?::[[:xdigit:]]{1,4}){1,5}|(?:[[:xdigit:]]{1,4}:){2}(?::[[:xdigit:]]{1,4}){1,4}|(?:[[:xdigit:]]{1,4}:){3}(?::[[:xdigit:]]{1,4}){1,3}|(?:[[:xdigit:]]{1,4}:){4}(?::[[:xdigit:]]{1,4}){1,2}|(?:[[:xdigit:]]{1,4}:){5}:[[:xdigit:]]{1,4}|(?:[[:xdigit:]]{1,4}:){1,6}:)\n(?U)access_token=(.*)&",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 4,
+      "flag": 1
+    },
+    {
+      "key": "ocr_api",
+      "value": "https://api.nn.ci/ocr/file/json",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 4,
+      "flag": 0
+    },
+    {
+      "key": "filename_char_mapping",
+      "value": "{\"/\": \"|\"}",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 4,
+      "flag": 0
+    },
+    {
+      "key": "forward_direct_link_params",
+      "value": "false",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 4,
+      "flag": 0
+    },
+    {
+      "key": "aria2_uri",
+      "value": "http://172.17.0.2:6800/jsonrpc",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 5,
+      "flag": 1
+    },
+    {
+      "key": "aria2_secret",
+      "value": "258456",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 5,
+      "flag": 1
+    },
+    {
+      "key": "token",
+      "value": "alist-5727e0c7-b339-4b98-a0e4-447e2a2d7c41MFtLPgAMtMkW6hUb1svQ7kEQPHZllGYtZFNA2R2QdgaPStr1azdDbzYli4f8e8Vg",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 0,
+      "flag": 1
+    },
+    {
+      "key": "search_index",
+      "value": "none",
+      "help": "",
+      "type": "select",
+      "options": "database,database_non_full_text,bleve,none",
+      "group": 6,
+      "flag": 0
+    },
+    {
+      "key": "auto_update_index",
+      "value": "false",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 6,
+      "flag": 0
+    },
+    {
+      "key": "ignore_paths",
+      "value": "",
+      "help": "one path per line",
+      "type": "text",
+      "options": "",
+      "group": 6,
+      "flag": 1
+    },
+    {
+      "key": "max_index_depth",
+      "value": "20",
+      "help": "max depth of index",
+      "type": "number",
+      "options": "",
+      "group": 6,
+      "flag": 1
+    },
+    {
+      "key": "index_progress",
+      "value": "{\"obj_count\":0,\"is_done\":true,\"last_done_time\":null,\"error\":\"\"}",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 0,
+      "flag": 1
+    },
+    {
+      "key": "sso_login_enabled",
+      "value": "false",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 7,
+      "flag": 0
+    },
+    {
+      "key": "sso_login_platform",
+      "value": "",
+      "help": "",
+      "type": "select",
+      "options": "Casdoor,Github,Microsoft,Google,Dingtalk",
+      "group": 7,
+      "flag": 0
+    },
+    {
+      "key": "sso_client_id",
+      "value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 7,
+      "flag": 1
+    },
+    {
+      "key": "sso_client_secret",
+      "value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 7,
+      "flag": 1
+    },
+    {
+      "key": "sso_organization_name",
+      "value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 7,
+      "flag": 1
+    },
+    {
+      "key": "sso_application_name",
+      "value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 7,
+      "flag": 1
+    },
+    {
+      "key": "sso_endpoint_name",
+      "value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 7,
+      "flag": 1
+    },
+    {
+      "key": "sso_jwt_public_key",
+      "value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 7,
+      "flag": 1
+    },
+    {
+      "key": "qbittorrent_url",
+      "value": "http://admin:adminadmin@localhost:8080/",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 0,
+      "flag": 1
+    },
+    {
+      "key": "qbittorrent_seedtime",
+      "value": "0",
+      "help": "",
+      "type": "number",
+      "options": "",
+      "group": 0,
+      "flag": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "dewy1p1",
+      "password": "Azhewoaini1314.",
+      "base_path": "/",
+      "role": 2,
+      "disabled": false,
+      "permission": 0,
+      "sso_id": ""
+    },
+    {
+      "id": 2,
+      "username": "guest",
+      "password": "guest",
+      "base_path": "/",
+      "role": 1,
+      "disabled": false,
+      "permission": 8,
+      "sso_id": ""
+    },
+    {
+      "id": 3,
+      "username": "Yuedu",
+      "password": "Azhewoaini1314.",
+      "base_path": "/BenPan",
+      "role": 0,
+      "disabled": false,
+      "permission": 768,
+      "sso_id": ""
+    },
+    {
+      "id": 4,
+      "username": "Floccus",
+      "password": "Azhewoaini1314.",
+      "base_path": "/BenPan",
+      "role": 0,
+      "disabled": false,
+      "permission": 768,
+      "sso_id": ""
+    },
+    {
+      "id": 5,
+      "username": "via",
+      "password": "Azhewoaini1314.",
+      "base_path": "/BenPan/Via",
+      "role": 0,
+      "disabled": false,
+      "permission": 1016,
+      "sso_id": ""
+    },
+    {
+      "id": 6,
+      "username": "SimpleHookR",
+      "password": "Azhewoaini1314.",
+      "base_path": "/BenPan",
+      "role": 0,
+      "disabled": false,
+      "permission": 904,
+      "sso_id": ""
+    }
+  ],
+  "storages": [
+    {
+      "id": 1,
+      "mount_path": "/BenPan",
+      "order": 1,
+      "driver": "Local",
+      "cache_expiration": 0,
+      "status": "work",
+      "addition": "{\"root_folder_path\":\"/opt/alist/data/Download\",\"thumbnail\":true,\"show_hidden\":true,\"mkdir_perm\":\"777\"}",
+      "remark": "",
+      "modified": "2023-06-18T16:15:19.703891916Z",
+      "disabled": false,
+      "enable_sign": false,
+      "order_by": "name",
+      "order_direction": "asc",
+      "extract_folder": "front",
+      "web_proxy": false,
+      "webdav_policy": "native_proxy",
+      "down_proxy_url": ""
+    },
+    {
+      "id": 4,
+      "mount_path": "/189Pan",
+      "order": 2,
+      "driver": "189CloudPC",
+      "cache_expiration": 30,
+      "status": "work",
+      "addition": "{\"username\":\"13378465102\",\"password\":\"Azhewoaini1314.\",\"validate_code\":\"\",\"root_folder_id\":\"12489142170817498\",\"order_by\":\"filename\",\"order_direction\":\"asc\",\"type\":\"personal\",\"family_id\":\"\",\"rapid_upload\":true,\"no_use_ocr\":true}",
+      "remark": "",
+      "modified": "2023-06-18T16:21:02.683244221Z",
+      "disabled": false,
+      "enable_sign": false,
+      "order_by": "",
+      "order_direction": "",
+      "extract_folder": "front",
+      "web_proxy": false,
+      "webdav_policy": "use_proxy_url",
+      "down_proxy_url": ""
+    },
+    {
+      "id": 3,
+      "mount_path": "/123Pan",
+      "order": 3,
+      "driver": "123Pan",
+      "cache_expiration": 30,
+      "status": "disabled",
+      "addition": "{\"username\":\"18048067894\",\"password\":\"Azhewoaini1314.\",\"root_folder_id\":\"1942527\",\"order_by\":\"file_name\",\"order_direction\":\"asc\",\"stream_upload\":true,\"AccessToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODU3OTI2MzIsImlhdCI6MTY4NTE4NzgzMiwiaWQiOjE4MTIwMTMxNzEsIm1haWwiOiIiLCJuaWNrbmFtZSI6IjE4MDQ4MDY3ODk0IiwidXNlcm5hbWUiOjE4MDQ4MDY3ODk0LCJ2IjowfQ.L_WzKx_nNNsq0m7smyNC8m5mqQtrn_s-Uf82Mt-wnf8\"}",
+      "remark": "",
+      "modified": "2023-08-06T18:58:50.430593116Z",
+      "disabled": true,
+      "enable_sign": false,
+      "order_by": "",
+      "order_direction": "",
+      "extract_folder": "front",
+      "web_proxy": false,
+      "webdav_policy": "302_redirect",
+      "down_proxy_url": ""
+    },
+    {
+      "id": 5,
+      "mount_path": "/KKPan",
+      "order": 4,
+      "driver": "Quark",
+      "cache_expiration": 30,
+      "status": "work",
+      "addition": "{\"cookie\":\"_UP_A4A_11_=wb9011168a2845ba9dffeb421a655055;_UP_30C_6A_=st9016201fea8do0victagup43jejeqq;_UP_TS_=sg16d9140a32d70dadca94b9f8f7282ad9e;_UP_E37_B7_=sg16d9140a32d70dadca94b9f8f7282ad9e;_UP_TG_=st9016201fea8do0victagup43jejeqq;_UP_335_2B_=1;__ptu=9663908b54a588e43ec05d1f59ee2cacAAQlxM0cAbOOQ42MCa7dH4PhDF9cKVP5Iv48fiNJXOdJcY6Vl0pJEn/VHRHWZvnopHo=;__ptu_fix=fixed;__pus=5e7245ac5ad40f3078969aa254ce6b81AATpzUCtylJ3DRahb+fU9LWYzLOit5mDJDQtTfW6Wqe73W7ErLeDvW1+RE0ln9t2zInMsHHnCzE1T7wc6grnQYF/;__kp=0d134db0-fbd8-11ed-8b8c-f52dbfb93646;__kps=AASvXbFzK+ImjLRfbeVIr/pO;__ktd=4u5iFu3+Avgd13Kb1qo3ew==;__uid=AASvXbFzK+ImjLRfbeVIr/pO;_UP_BT_=html5;_UP_D_=mobile;_UP_F7E_8D_=d6l+og/Fn2OVR2EcfZoWqpWwAsSGsVzdGUOU+WEa1/D0I6yjWETtNHD76SxlX5m4rrD1zMwJFjsIpxEoAQFoJnzxAz3+Q+s6sDzKXdPuwWWq5ceSNFpeZw7BtOQn/KUWcGQ8wd6GAjIccB6wIARvyukaBxJH/MFX7dOZNOZ4JBsh7CGpGW4wTEJcFtTopA7+tOMDLaZiUym5+oA2PjNklq8TuCqmWvoeWCnk4RKlAJlfCGoj/YwTeaz7FNe2w3pyo/oZt5lWEwUkCOA5RlG7T2fxgNZDJAIdI7Q/bnxqpO/VMYtMRzqrGaAINyd+nUvWnYXOVU57/o1kqY/tL/WqkKAINyd+nUvWfyUNWQhawcjCAxJ6fs0/ZekBWv7p6n/qTZLRf7JESgiTxjcavbjWVg==;__puus=d4aa8af3201e8493ee1fb5ff4270400bAATSUzTK/r6ah+LQDB0qEuCG3J8p6pXphOO2vpt+iVxdCprbT3Fr+DRfSmUcaCR5RcpuCsKInEq1EvOwPsASqe1l6pwtgvA8kh7U6Jbcmvs2GdNnpk+qTH82BKn040Z0Obibw2Fh2VG0GLDOzQekR4rx2EC4tIBZot1nNVVQJvhQpbUPLX20NoKzN0eYkbtmNIr/yBf7y0GViQDiT5zt6GSq\",\"root_folder_id\":\"c90d286d04c34592b25571ee5e02aa38\",\"order_by\":\"updated_at\",\"order_direction\":\"asc\"}",
+      "remark": "",
+      "modified": "2023-06-19T13:58:31.955608636Z",
+      "disabled": false,
+      "enable_sign": false,
+      "order_by": "",
+      "order_direction": "",
+      "extract_folder": "front",
+      "web_proxy": false,
+      "webdav_policy": "use_proxy_url",
+      "down_proxy_url": ""
+    },
+    {
+      "id": 6,
+      "mount_path": "/199",
+      "order": 6,
+      "driver": "189CloudPC",
+      "cache_expiration": 30,
+      "status": "work",
+      "addition": "{\"username\":\"18048067894\",\"password\":\"Azhewoaini1314.\",\"validate_code\":\"\",\"root_folder_id\":\"32549142118215513\",\"order_by\":\"filename\",\"order_direction\":\"asc\",\"type\":\"personal\",\"family_id\":\"767070001\",\"rapid_upload\":true,\"no_use_ocr\":true}",
+      "remark": "",
+      "modified": "2023-08-11T03:20:53.364171812Z",
+      "disabled": false,
+      "enable_sign": false,
+      "order_by": "",
+      "order_direction": "",
+      "extract_folder": "",
+      "web_proxy": false,
+      "webdav_policy": "302_redirect",
+      "down_proxy_url": ""
+    }
+  ],
+  "metas": [
+    {
+      "id": 1,
+      "path": "/BenPan/健康证",
+      "password": "258456",
+      "p_sub": true,
+      "write": true,
+      "w_sub": true,
+      "hide": "",
+      "h_sub": true,
+      "readme": "",
+      "r_sub": true
+    }
+  ]
+}
